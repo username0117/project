@@ -1,0 +1,141 @@
+body {
+  background-color: rgb(199, 233, 255);
+}
+header {
+  text-align: center;
+  margin-top: -5px;
+  margin-bottom: -20px;
+}
+header div{
+  text-align: right;
+  /* background: #e2c7ff; */
+}
+div button[type="button"] {
+  height: 28px;
+  margin: 5px;
+  font-size: small;
+  background-color: #cdaeff; /* 버튼 색상 */
+  border: none; /* 외곽선 없음 */
+  font-weight: bold; /* 글씨 굵게 */
+  color: black; /* 글씨 색상 */
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px; /* 버튼 모서리 둥글게 */
+}
+.spacing {
+  letter-spacing: 3px;
+}
+div .nav {
+  border: 0px;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 0 5px;
+  overflow: hidden;
+  background-color: #cdaeff;
+  border: 0px;
+  border-radius: 10px;
+}
+nav ul li {
+  float: left;
+  display: inline;
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+nav ul li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+nav ul li a:hover, .dropbtn:hover .dropbtn {
+  background-color: #e2c7ff;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: small;
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+div.middle {
+  display: flex;
+  text-align: center;
+  padding: 3px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+div section {
+  float: left;
+  width: 84%;
+  height: auto;
+  border: 0px;
+  background-color: white;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 5px ;
+  text-align: left;
+  vertical-align: top;
+  box-sizing: border-box;
+  align-items: flex-start;
+}
+div section h2, div section p {
+  margin: 0;
+  padding: 0;
+}
+div section h2 {
+  text-align: left;
+}
+div aside {
+  float: right;
+  width: 15%;
+  height: auto;
+  border: 0px;
+  background-color: white;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+.middle>section, .middle>aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.middle > section:before, .middle > aside:before {
+  content: '';
+  display: block;
+  margin-bottom: auto;
+}
+footer {
+  background-color: #cdaeff;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 25px;
+  padding: 5px;
+  clear: both;
+  border: 0px;
+  border-radius: 10px;
+}

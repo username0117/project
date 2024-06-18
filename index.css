@@ -1,0 +1,67 @@
+#wrapper {
+  font-family: Goah, Arial, sans-serif;
+  width: 700px;
+  height: auto;
+  border: 0px solid;
+  background-color: rgb(199, 233, 255);
+  text-align: center;
+  margin: 0 auto; /* wrapper를 가운데 정렬 */
+}
+.legend {
+  font-weight: bold;
+  font-size: 30px;
+  color: black;  
+}
+.fieldset-container {
+  display: flex;
+  justify-content: center;
+}
+fieldset {
+  margin: 0;
+  border: 0;
+  text-align: left; /* fieldset 내부 요소를 좌측 정렬 */
+}
+fieldset ul {
+  list-style: none;
+  padding: 0; /* 기본 ul 패딩을 초기화 */
+}
+fieldset ul li {
+  margin-bottom: 10px;
+  text-align: left; /* li 요소를 좌측 정렬 */
+}
+
+li label {
+  font-size: large;
+}
+
+li input {
+  width: 200px;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+}
+
+label.tit {
+  display: inline-block;
+  font-weight: bold;
+  width: 90px;
+}
+.loginbutton {
+  text-align: center;
+  clear: both;
+}
+input[type="submit"] {
+  font-weight: bold;
+  font-size: large;
+  background-color: #e2c7ff;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer; /* 버튼 모양을 클릭 가능하도록 변경 */
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #cdaeff;
+  font-size: x-large;
+}

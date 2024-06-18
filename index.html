@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bearious Login Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="png/Breaious width logo nomal.png" 
+            alt="Logo Image" width="665px" height="350px">
+        </header>
+        <form onsubmit="event.preventDefault(); validateLogin();">
+            <div class="fieldset-container">
+                <fieldset>
+                    <legend class="legend">Login</legend>
+                    <ul>
+                        <li>
+                            <label for="username" class="tit">ID</label><br>
+                            <input type="text" id="username" required>
+                        </li>
+                        <li>
+                            <label for="Password" class="tit">Password</label><br>
+                            <input type="password" id="password" required>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div id="button">
+                <input type="submit" class="loginbutton" value="로그인" onclick="goToHome()">
+                <input type="submit" class="joinbutton" value="회원가입" onclick="goToJoin();">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
