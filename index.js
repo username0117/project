@@ -15,5 +15,5 @@ function validateLogin() {
 }
 
 function goToJoin() {
-  window.location.href = 'join.html';
+  window.location.href = 'Join.html';
 }
